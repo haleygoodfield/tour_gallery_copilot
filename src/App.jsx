@@ -1,7 +1,5 @@
-// Copilot Prompt Used: 
-// Fetch tours from https://api.allorigins.win/raw?url=https://course-api.com/react-tours-project using useEffect
-// Store in state: tours, loading, error
 import React, { useState, useEffect } from 'react';
+import Gallery from './components/Gallery';
 
 const App = () => {
   const [tours, setTours] = useState([]);
@@ -31,6 +29,10 @@ const App = () => {
     fetchTours();
   }, []);
 
+  const removeTour = (id) => {
+    setTours(tours.filter((tour) => tour.id !== id));
+  };
+
   if (loading) {
     return <h2>Loading...</h2>;
   }
@@ -42,11 +44,7 @@ const App = () => {
   return (
     <div>
       <h1>Tours</h1>
-      <ul>
-        {tours.map((tour) => (
-          <li key={tour.id}>{tour.name}</li>
-        ))}
-      </ul>
+      <Gallery tours={tours} onRemove={removeTour} />
     </div>
   );
 };
