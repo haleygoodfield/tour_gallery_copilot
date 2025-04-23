@@ -27,5 +27,54 @@ const TourCard = ({ tour, onRemove }) => {
   );
 };
 
+const styles = {
+  card: {
+    border: '1px solid #ddd',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    margin: '16px',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    maxWidth: '400px',
+    backgroundColor: '#fff',
+  },
+  image: {
+    width: '100%',
+    height: '200px',
+    objectFit: 'cover',
+  },
+  content: {
+    padding: '16px',
+  },
+  title: {
+    fontSize: '1.5rem',
+    margin: '0 0 8px',
+  },
+  price: {
+    color: '#2a9d8f',
+    fontWeight: 'bold',
+    marginBottom: '8px',
+  },
+  info: {
+    fontSize: '0.9rem',
+    lineHeight: '1.5',
+    marginBottom: '16px',
+  },
+  toggleButton: {
+    background: 'none',
+    border: 'none',
+    color: '#007bff',
+    cursor: 'pointer',
+    padding: '0',
+    fontSize: '0.9rem',
+  },
+  removeButton: {
+    backgroundColor: '#e63946',
+    color: '#fff',
+    border: 'none',
+    padding: '10px 16px',
+    borderRadius: '4px',
+    cursor: 'pointer',
+  },
+};
 
 export default TourCard;
