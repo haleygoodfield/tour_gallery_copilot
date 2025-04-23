@@ -54,22 +54,10 @@ const App = () => {
 
   return (
     <div>
-      <h1>Tours</h1>
+      <h1 style={styles.header}>Tours</h1>
       <Gallery tours={tours} onRemove={removeTour} />
     </div>
   );
-};
-
-const styles = {
-  refreshButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
 };
 
 export default App;
