@@ -64,7 +64,7 @@ const App = () => {
   // Render the Gallery component with the tours and removeTour function
   return (
     <div>
-      <h1 style={styles.header}>Tours</h1>
+      <h1 style={styles.header}>Tours Available</h1>
       <Gallery tours={tours} onRemove={removeTour} />
     </div>
   );
@@ -75,7 +75,7 @@ const styles = {
   header: {
     textAlign: 'center', // Center the header text
     margin: '20px 0', // Add vertical spacing above and below the header
-    fontSize: '2rem', // Set a large font size for the header
+    fontSize: '3rem', // Set a larger font size for the header
     color: '#333', // Use a dark gray color for the text
   },
   loading: {
