@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React and useState hook
 
 // TourCard component to display individual tour details
 const TourCard = ({ tour, onRemove }) => {

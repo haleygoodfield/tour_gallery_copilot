@@ -1,5 +1,5 @@
-import React from 'react';
-import TourCard from './TourCard';
+import React from 'react'; // Import React library
+import TourCard from './TourCard'; // Import the TourCard component
 
 // Gallery component to display a list of tours
 const Gallery = ({ tours, onRemove }) => {

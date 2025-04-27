@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Gallery from './components/Gallery';
+import React, { useState, useEffect } from 'react'; // Import React and hooks
+import Gallery from './components/Gallery'; // Import the Gallery component
 
 const App = () => {
   // State to store the list of tours

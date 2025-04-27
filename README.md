@@ -23,12 +23,12 @@ The **Tour Gallery App** is a React-based application that displays a list of to
    https://github.com/your-username/tour-gallery-app.git
 
 2. Navigate to the project directory:
-   cd tour-gallery-app
+   **cd tour-gallery-app**
 
 3. Install dependencies:
-   npm install
+   **npm install**
 
 4. Start the development server:
-   npm run dev 
+   **npm run dev**
 
 
